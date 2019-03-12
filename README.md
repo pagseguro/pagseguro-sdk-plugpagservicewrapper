@@ -28,6 +28,43 @@ Em seguida inclua a seguinte dependencia no gradle do modulo:
 implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.0'
 ```
 
-# **Documentação**
+## **Documentação**
 
 Mais informações sobre como utilizar o PlugPagServiceWrapper podem ser encontradas no arquivo **Documentacao.pdf**
+
+
+## Pré-requisitos
+
+Para utilizar o PlugPagServiceWrapper, é necessário incluir suporte ao Kotlin no app. Para isso, adicione os seguintes códigos:
+
+No build.gradle do projeto:
+
+```
+buildscript {
+	ext.kotlin_version = ‘1.3.21’
+	...
+	dependencies {
+		...
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+		...
+	}
+}
+
+```
+
+No build.gradle do módulo:
+
+```
+...
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+...
+
+dependencies {
+	...
+	implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+	...
+}
+```
+
+
