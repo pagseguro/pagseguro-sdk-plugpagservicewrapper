@@ -25,7 +25,7 @@ allprojects {
 
 Em seguida inclua a seguinte dependencia no gradle do modulo:
 ```
-implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.0'
+implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.22.0'
 ```
 
 ## **Documentação**
