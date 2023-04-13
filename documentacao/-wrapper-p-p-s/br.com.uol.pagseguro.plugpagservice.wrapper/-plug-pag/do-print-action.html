@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>doPrintAction</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>WrapperPPS</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/PlugPag/doPrintAction/#kotlin.Int#kotlin.String?/PointingToDeclaration//-943990174">
+  <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><a href="index.html">PlugPag</a><span class="delimiter">/</span><span class="current">doPrintAction</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>do</span><wbr></wbr><span>Print</span><wbr></wbr><span><span>Action</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="do-print-action.html"><span class="token function">doPrintAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">phoneNumber<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Ação a ser executada durante uma impressão.</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCommand
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCustomPrinterLayout
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEffectuatePreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagExtras
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInitializationResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInstallment
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNFCResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPaymentData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoKeyingData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoQueryData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrintResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagReceiptSMSData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagStyleData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagTransactionResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagVoidData
+import br.com.uol.pagseguro.plugpagservice.wrapper.TerminalCapabilities
+import br.com.uol.pagseguro.plugpagservice.wrapper.data.result.PlugPagCmdExchangeResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.exception.PlugPagException
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAPDUCmdExchangeListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAbortListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagActivationListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagInstallmentsListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagIsActivatedListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagLastTransactionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagNFCListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.value
+fun main() { 
+   //sampleStart 
+   val plugPag: IPlugPagWrapper = PlugPag(context)
+plugPag.doPrintAction(action = PlugPagExtras.PRINT_ACTION_PRINT) 
+   //sampleEnd
+}</code></pre></div><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCommand
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCustomPrinterLayout
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEffectuatePreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagExtras
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInitializationResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInstallment
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNFCResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPaymentData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoKeyingData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoQueryData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrintResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagReceiptSMSData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagStyleData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagTransactionResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagVoidData
+import br.com.uol.pagseguro.plugpagservice.wrapper.TerminalCapabilities
+import br.com.uol.pagseguro.plugpagservice.wrapper.data.result.PlugPagCmdExchangeResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.exception.PlugPagException
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAPDUCmdExchangeListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAbortListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagActivationListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagInstallmentsListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagIsActivatedListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagLastTransactionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagNFCListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.value
+fun main() { 
+   //sampleStart 
+   val plugPag: IPlugPagWrapper = PlugPag(context)
+plugPag.doPrintAction(
+    action = PlugPagExtras.PRINT_ACTION_PRINT,
+    phoneNumber = &quot;Número de telefone do destinatário.&quot;
+) 
+   //sampleEnd
+}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>action</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Ação de impressão a ser executada, podem ser: <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-e-r-a-s-e.html">PlugPagExtras.PRINT_ACTION_ERASE</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-s-e-t.html">PlugPagExtras.PRINT_ACTION_SET</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-s-h-o-w_-p-o-p-u-p.html">PlugPagExtras.PRINT_ACTION_SHOW_POPUP</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-p-r-i-n-t.html">PlugPagExtras.PRINT_ACTION_PRINT</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-s-m-s.html">PlugPagExtras.PRINT_ACTION_SMS</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-n-o-t-h-i-n-g.html">PlugPagExtras.PRINT_ACTION_NOTHING</a>, <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-o-n_-p-r-i-n-t.html">PlugPagExtras.PRINT_ACTION_ON_PRINT</a> e <a href="../-plug-pag-extras/-p-r-i-n-t_-a-c-t-i-o-n_-o-n_-e-r-r-o-r.html">PlugPagExtras.PRINT_ACTION_ON_ERROR</a></p></div></div></div></div></div><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>phone</span><wbr></wbr><span><span>Number</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Número de telefone destinatário que será realizado o envio do SMS.</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

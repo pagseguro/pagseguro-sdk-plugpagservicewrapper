@@ -3,11 +3,7 @@
   <groupId>br.com.uol.pagseguro.plugpagservice.wrapper</groupId>
   <artifactId>wrapper</artifactId>
   <versioning>
-<<<<<<< HEAD
-    <release>1.22.0</release>
-=======
-    <release>1.21.0</release>
->>>>>>> 177814ea967705b93e9441c39b3698b682a8b0b8
+    <release>1.24.0</release>
     <versions>
       <version>1.6.3</version>
       <version>1.7.6</version>
@@ -24,14 +20,10 @@
       <version>1.15.3</version>
       <version>1.17.0</version>
       <version>1.20.2</version>
-<<<<<<< HEAD
-      <version>1.22.0</version>
-    </versions>
-    <lastUpdated>20221103141231</lastUpdated>
-=======
       <version>1.21.0</version>
+      <version>1.22.0</version>
+      <version>1.24.0</version>
     </versions>
-    <lastUpdated>20220608152207</lastUpdated>
->>>>>>> 177814ea967705b93e9441c39b3698b682a8b0b8
+    <lastUpdated>20230413184842</lastUpdated>
   </versioning>
 </metadata>

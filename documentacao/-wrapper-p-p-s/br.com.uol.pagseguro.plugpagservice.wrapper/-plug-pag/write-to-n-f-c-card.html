@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>writeToNFCCard</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>WrapperPPS</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/PlugPag/writeToNFCCard/#br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData/PointingToDeclaration//-943990174">
+  <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><a href="index.html">PlugPag</a><span class="delimiter">/</span><span class="current">writeToNFCCard</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span><span>NFCCard</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="write-to-n-f-c-card.html"><span class="token function">writeToNFCCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../-plug-pag-near-field-card-data/index.html">PlugPagNearFieldCardData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-n-f-c-result/index.html">PlugPagNFCResult</a></div><p class="paragraph">Realiza escrita em um cartão NFC.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores resultantes da escrita no cartão NFC.</p></span><h4 class="">Samples</h4>br.com.uol.pagseguro.samples.wrapper.nfc.writeToNFCCardSample<h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>card</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Dados de entrada de uma escrita em cartão NFC.</p></div></div></div></div></div></div></div><h4 class="">Throws</h4><div class="table" data-togglable="Throws"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.exception/-plug-pag-exception/index.html"><span>Plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">Caso a escrita em cartão NFC não obtenha sucesso.</p></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

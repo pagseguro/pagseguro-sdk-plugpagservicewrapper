@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>asyncReprintEstablishmentReceipt</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>WrapperPPS</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/IPlugPagWrapper/asyncReprintEstablishmentReceipt/#br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener/PointingToDeclaration//-943990174">
+  <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><a href="index.html">IPlugPagWrapper</a><span class="delimiter">/</span><span class="current">asyncReprintEstablishmentReceipt</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>async</span><wbr></wbr><span>Reprint</span><wbr></wbr><span>Establishment</span><wbr></wbr><span><span>Receipt</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="async-reprint-establishment-receipt.html"><span class="token function">asyncReprintEstablishmentReceipt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Executa uma solicitação de reimpressão da via do estabelecimento de forma assíncrona.</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCommand
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCustomPrinterLayout
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEffectuatePreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagExtras
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInitializationResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInstallment
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNFCResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPaymentData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoKeyingData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoQueryData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrintResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagReceiptSMSData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagStyleData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagTransactionResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagVoidData
+import br.com.uol.pagseguro.plugpagservice.wrapper.TerminalCapabilities
+import br.com.uol.pagseguro.plugpagservice.wrapper.data.result.PlugPagCmdExchangeResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.exception.PlugPagException
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAPDUCmdExchangeListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAbortListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagActivationListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagInstallmentsListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagIsActivatedListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagLastTransactionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagNFCListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.value
+fun main() { 
+   //sampleStart 
+   val plugPag: IPlugPagWrapper = PlugPag(context)
+val listener = object : PlugPagPrinterListener {
+    override fun onSuccess(data: PlugPagPrintResult) {
+        // Ação a ser executada após uma impressão com sucesso.
+    }
+
+    override fun onError(data: PlugPagPrintResult) {
+        // Ação a ser executada ao ocorrer uma falha na impressão.
+    }
+}
+
+plugPag.asyncReprintEstablishmentReceipt(listener = listener) 
+   //sampleEnd
+}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>listener</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Métodos chamados durante uma impressão. Para consultar estes métodos, verificar: <a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a>.</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

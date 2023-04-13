@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PlugPagPreAutoQueryData</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>WrapperPPS</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/PlugPagPreAutoQueryData///PointingToDeclaration//-943990174">
+  <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><span class="current">PlugPagPreAutoQueryData</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Query</span><wbr></wbr><span><span>Data</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">PlugPagPreAutoQueryData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>amount<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>installments<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pan<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>securityCode<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expirationDate<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionDate<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionCode<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="android.os/Parcelable///PointingToDeclaration/">Parcelable</span></div><p class="paragraph">Contém os dados necessários para solicitação de consulta de transação pré-autorizada digitada.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Inherited functions">Inherited functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="124501639%2FConstructors%2F-943990174" anchor-label="PlugPagPreAutoQueryData" id="124501639%2FConstructors%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-plug-pag-pre-auto-query-data.html"><span>Plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Query</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124501639%2FConstructors%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-plug-pag-pre-auto-query-data.html"><span class="token function">PlugPagPreAutoQueryData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">amount<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">installments<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pan<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter ">securityCode<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter ">expirationDate<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter ">transactionDate<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING<span class="token punctuation">, </span></span><span class="parameter ">transactionCode<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator"> = </span>EMPTY_STRING</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-781542653%2FProperties%2F-943990174" anchor-label="amount" id="-781542653%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="amount.html"><span><span>amount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-781542653%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="-781542653%2FProperties%2F-943990174" anchor-label="amount" id="-781542653%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="amount.html">amount</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator">?</span><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><a data-name="-781542653%2FProperties%2F-943990174" anchor-label="amount" id="-781542653%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Valor da transação em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-552271362%2FProperties%2F-943990174" anchor-label="expirationDate" id="-552271362%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="expiration-date.html"><span>expiration</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-552271362%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="-552271362%2FProperties%2F-943990174" anchor-label="expirationDate" id="-552271362%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="expiration-date.html">expirationDate</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><a data-name="-552271362%2FProperties%2F-943990174" anchor-label="expirationDate" id="-552271362%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Data de validade do cartão utilizado na transação. Deve ser no formato MMAA, sendo M = Mês e A = Ano. Por exemplo, para um cartão com validade até Janeiro de 2028, o valor deverá ser 0128.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1874845953%2FProperties%2F-943990174" anchor-label="installments" id="1874845953%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="installments.html"><span><span>installments</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1874845953%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="1874845953%2FProperties%2F-943990174" anchor-label="installments" id="1874845953%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="installments.html">installments</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><a data-name="1874845953%2FProperties%2F-943990174" anchor-label="installments" id="1874845953%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Quantidade de parcelas. Para vendas à vista, é necessário usar o valor <a href="../-plug-pag/-companion/-a_-v-i-s-t-a_-i-n-s-t-a-l-l-m-e-n-t_-q-u-a-n-t-i-t-y.html">PlugPag.A_VISTA_INSTALLMENT_QUANTITY</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1730027500%2FProperties%2F-943990174" anchor-label="installmentType" id="1730027500%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="installment-type.html"><span>installment</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1730027500%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="1730027500%2FProperties%2F-943990174" anchor-label="installmentType" id="1730027500%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="installment-type.html">installmentType</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><a data-name="1730027500%2FProperties%2F-943990174" anchor-label="installmentType" id="1730027500%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Tipo de parcelamento, podendo ser: <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-a_-v-i-s-t-a.html">PlugPag.INSTALLMENT_TYPE_A_VISTA</a> e <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-v-e-n-d-e-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_VENDEDOR</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1264365026%2FProperties%2F-943990174" anchor-label="pan" id="1264365026%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="pan.html"><span><span>pan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1264365026%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="1264365026%2FProperties%2F-943990174" anchor-label="pan" id="1264365026%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pan.html">pan</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><a data-name="1264365026%2FProperties%2F-943990174" anchor-label="pan" id="1264365026%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Número do cartão utilizado na transação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="621482286%2FProperties%2F-943990174" anchor-label="securityCode" id="621482286%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="security-code.html"><span>security</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="621482286%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="621482286%2FProperties%2F-943990174" anchor-label="securityCode" id="621482286%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="security-code.html">securityCode</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><a data-name="621482286%2FProperties%2F-943990174" anchor-label="securityCode" id="621482286%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Código de segurança (CVV) do cartão utilizado na transação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1659885908%2FProperties%2F-943990174" anchor-label="transactionCode" id="1659885908%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="transaction-code.html"><span>transaction</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1659885908%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="1659885908%2FProperties%2F-943990174" anchor-label="transactionCode" id="1659885908%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="transaction-code.html">transactionCode</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><a data-name="1659885908%2FProperties%2F-943990174" anchor-label="transactionCode" id="1659885908%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Código da transação realizada.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-169712973%2FProperties%2F-943990174" anchor-label="transactionDate" id="-169712973%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="transaction-date.html"><span>transaction</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-169712973%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="-169712973%2FProperties%2F-943990174" anchor-label="transactionDate" id="-169712973%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="transaction-date.html">transactionDate</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><a data-name="-169712973%2FProperties%2F-943990174" anchor-label="transactionDate" id="-169712973%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><p class="paragraph">Data em que a transação foi realizada. Deve ser no formato dd/MM/AAAA, sendo d = Dia, M = Mês e A = Ano. Por exemplo, para uma venda transação efetuada no dia 7 de Janeiro de 2022, o valor deverá ser 07/01/2022.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inherited functions</h2>
+      <div class="table" data-togglable="Inherited functions"><a data-name="-1578325224%2FFunctions%2F-943990174" anchor-label="describeContents" id="-1578325224%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag-transaction-result/index.html#-1578325224%2FFunctions%2F-943990174"><span>describe</span><wbr></wbr><span><span>Contents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1578325224%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-plug-pag-transaction-result/index.html#-1578325224%2FFunctions%2F-943990174"><span class="token function">describeContents</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1754457655%2FFunctions%2F-943990174" anchor-label="writeToParcel" id="-1754457655%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag-transaction-result/index.html#-1754457655%2FFunctions%2F-943990174"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Parcel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1754457655%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-plug-pag-transaction-result/index.html#-1754457655%2FFunctions%2F-943990174"><span class="token function">writeToParcel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="android.os/Parcel///PointingToDeclaration/">Parcel</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
