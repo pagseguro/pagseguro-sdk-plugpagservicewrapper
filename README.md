@@ -30,7 +30,7 @@ implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.24.0'
 
 ## **Documentação**
 
-Mais informações sobre como utilizar o PlugPagServiceWrapper podem ser encontradas na [documentacao oficial](documentacao)
+Mais informações sobre como utilizar o PlugPagServiceWrapper podem ser encontradas na [documentacao oficial](https://pagseguro.github.io/pagseguro-sdk-plugpagservicewrapper/)
 
 
 ## Pré-requisitos
