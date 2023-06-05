@@ -51,59 +51,12 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/IPlugPagWrapper/calculateInstallments/#kotlin.String/PointingToDeclaration//-943990174">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/IPlugPagWrapper/calculateInstallments/#kotlin.String#kotlin.Int/PointingToDeclaration//-943990174">
   <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><a href="index.html">IPlugPagWrapper</a><span class="delimiter">/</span><span class="current">calculateInstallments</span></div>
   <div class="cover ">
     <h1 class="cover"><span>calculate</span><wbr></wbr><span><span>Installments</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><p class="paragraph">Executa o cálculo de valor das parcelas de um parcelamento do tipo <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, seguindo o padrão: “R$ ##,##”.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
-import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCommand
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCustomPrinterLayout
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEffectuatePreAutoData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagExtras
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInitializationResult
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInstallment
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNFCResult
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPaymentData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoKeyingData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoQueryData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrintResult
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagReceiptSMSData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagStyleData
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagTransactionResult
-import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagVoidData
-import br.com.uol.pagseguro.plugpagservice.wrapper.TerminalCapabilities
-import br.com.uol.pagseguro.plugpagservice.wrapper.data.result.PlugPagCmdExchangeResult
-import br.com.uol.pagseguro.plugpagservice.wrapper.exception.PlugPagException
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAPDUCmdExchangeListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAbortListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagActivationListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagInstallmentsListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagIsActivatedListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagLastTransactionListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagNFCListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
-import br.com.uol.pagseguro.plugpagservice.wrapper.value
-fun main() { 
-   //sampleStart 
-   val plugPag: IPlugPagWrapper = PlugPag(context)
-val installments = plugPag.calculateInstallments(saleValue = &quot;2000&quot;)
-
-installments.forEach { parcela -&gt;
-    // Lista com cada valor de parcela.
-} 
-   //sampleEnd
-}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-plug-pag-installment/index.html">PlugPagInstallment</a><span class="token operator">&gt;</span></div><p class="paragraph">Executa o cálculo de valor das parcelas.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, sendo cada uma delas uma instânca de <a href="../-plug-pag-installment/index.html">PlugPagInstallment</a>.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-plug-pag-installment/index.html">PlugPagInstallment</a><span class="token operator">&gt;</span></div><p class="paragraph">Executa o cálculo de valor das parcelas.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, sendo cada uma delas uma instânca de <a href="../-plug-pag-installment/index.html">PlugPagInstallment</a>.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
 import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
@@ -153,7 +106,54 @@ installments.forEach { parcela -&gt;
     // Lista com cada valor de parcela.
 } 
    //sampleEnd
-}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>installment</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Tipo de parcelamento, podendo ser: <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-a_-v-i-s-t-a.html">PlugPag.INSTALLMENT_TYPE_A_VISTA</a>, <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-v-e-n-d-e-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_VENDEDOR</a> e <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p></div></div></div></div></div></div></div></div></div>
+}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>installment</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Tipo de parcelamento, podendo ser: <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-a_-v-i-s-t-a.html">PlugPag.INSTALLMENT_TYPE_A_VISTA</a>, <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-v-e-n-d-e-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_VENDEDOR</a> e <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function"><strike>calculateInstallments</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">Essa funcionalidade foi descontinuada e será removida em futuras atualizações.</p><h4 class="">Replace with</h4><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag<br></code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">calculateInstallments(saleValue = saleValue, installmentType = PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div><p class="paragraph">Executa o cálculo de valor das parcelas de um parcelamento do tipo <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, seguindo o padrão: “R$ ##,##”.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCommand
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagCustomPrinterLayout
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEffectuatePreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagEventListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagExtras
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInitializationResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagInstallment
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNFCResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagNearFieldCardData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPaymentData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoKeyingData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPreAutoQueryData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrintResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagPrinterListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagReceiptSMSData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagStyleData
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagTransactionResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagVoidData
+import br.com.uol.pagseguro.plugpagservice.wrapper.TerminalCapabilities
+import br.com.uol.pagseguro.plugpagservice.wrapper.data.result.PlugPagCmdExchangeResult
+import br.com.uol.pagseguro.plugpagservice.wrapper.exception.PlugPagException
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAPDUCmdExchangeListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagAbortListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagActivationListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagInstallmentsListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagIsActivatedListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagLastTransactionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagNFCListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
+import br.com.uol.pagseguro.plugpagservice.wrapper.value
+fun main() { 
+   //sampleStart 
+   val plugPag: IPlugPagWrapper = PlugPag(context)
+val installments = plugPag.calculateInstallments(saleValue = &quot;2000&quot;)
+
+installments.forEach { parcela -&gt;
+    // Lista com cada valor de parcela.
+} 
+   //sampleEnd
+}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div></div></div></div></div>
 </div>
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span

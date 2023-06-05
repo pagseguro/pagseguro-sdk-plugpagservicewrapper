@@ -25,12 +25,12 @@ allprojects {
 
 Em seguida inclua a seguinte dependencia no gradle do modulo:
 ```
-implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.24.0'
+implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.25.0'
 ```
 
 ## **Documentação**
 
-Mais informações sobre como utilizar o PlugPagServiceWrapper podem ser encontradas na [documentacao oficial](https://pagseguro.github.io/pagseguro-sdk-plugpagservicewrapper/)
+Mais informações sobre como utilizar o PlugPagServiceWrapper podem ser encontradas na [documentação oficial](https://pagseguro.github.io/pagseguro-sdk-plugpagservicewrapper/)
 
 
 ## Pré-requisitos
