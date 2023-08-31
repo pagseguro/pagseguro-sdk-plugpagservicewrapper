@@ -98,11 +98,11 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagAPDUCmdExchangeListener {
-    override fun onSuccess(paucOutData: PlugPagCmdExchangeResult) {
+    override fun onSuccess(result: PlugPagCmdExchangeResult) {
         // Ação a ser executada ao comando APDU ser executado com sucesso.
     }
 
-    override fun onError(errorMessage: String) {
+    override fun onError(result: PlugPagCmdExchangeResult) {
         // Ação a ser executada ao comando APDU ser executado com erro.
     }
 }

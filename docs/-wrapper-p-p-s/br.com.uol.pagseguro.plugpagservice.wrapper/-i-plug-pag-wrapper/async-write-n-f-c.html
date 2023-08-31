@@ -102,7 +102,7 @@ val listener = object : PlugPagNFCListener {
         // Ação a ser executada ao ser finalizada leitura ou escrita em cartão NFC com sucesso.
     }
 
-    override fun onError(errorMessage: String) {
+    override fun onError(plugPagNFCResult: PlugPagNFCResult) {
         // Ação a ser executada ao ocorrer uma falha na leitura ou escrita em cartão NFC.
     }
 }

@@ -98,11 +98,11 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagPaymentListener {
-    override fun onSuccess(it: PlugPagTransactionResult) {
+    override fun onSuccess(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ser finalizada a transação com sucesso.
     }
 
-    override fun onError(it: PlugPagTransactionResult) {
+    override fun onError(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ocorrer uma falha na transação.
     }
 
@@ -173,11 +173,11 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagPaymentListener {
-    override fun onSuccess(it: PlugPagTransactionResult) {
+    override fun onSuccess(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ser finalizada a transação com sucesso.
     }
 
-    override fun onError(it: PlugPagTransactionResult) {
+    override fun onError(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ocorrer uma falha na transação.
     }
 
@@ -248,11 +248,11 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagPaymentListener {
-    override fun onSuccess(it: PlugPagTransactionResult) {
+    override fun onSuccess(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ser finalizada a transação com sucesso.
     }
 
-    override fun onError(it: PlugPagTransactionResult) {
+    override fun onError(transactionResult: PlugPagTransactionResult) {
         // Ação a ser executada ao ocorrer uma falha na transação.
     }
 

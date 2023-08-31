@@ -98,7 +98,7 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagSetStylesListener {
-    override fun onSetStylesSuccess(onSetStylesSuccess: Boolean) {
+    override fun onSetStylesFinished(setStylesResult: Boolean) {
         // Ação a ser executada ao finalizar a customização com sucesso.
     }
 

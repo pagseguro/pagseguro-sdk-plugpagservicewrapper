@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AsyncPlugPag</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>WrapperPPS</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/AsyncPlugPag///PointingToDeclaration//-943990174">
+  <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><span class="current">AsyncPlugPag</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Async</span><wbr></wbr><span>Plug</span><wbr></wbr><span><span>Pag</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AsyncPlugPag</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">metricListener<span class="token operator">: </span><a href="../index.html#860932565%2FClasslikes%2F-943990174">WrapperMetricListener</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="br.com.uol.pagseguro.plugpagservice.wrapper/BasePlugPag///PointingToDeclaration/">BasePlugPag</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inherited functions">Inherited functions</button><button class="section-tab" data-togglable="Inherited properties">Inherited properties</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-566501908%2FConstructors%2F-943990174" anchor-label="AsyncPlugPag" id="-566501908%2FConstructors%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-async-plug-pag.html"><span>Async</span><wbr></wbr><span>Plug</span><wbr></wbr><span><span>Pag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-566501908%2FConstructors%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-async-plug-pag.html"><span class="token function">AsyncPlugPag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">metricListener<span class="token operator">: </span><a href="../index.html#860932565%2FClasslikes%2F-943990174">WrapperMetricListener</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inherited properties</h2>
+      <div class="table" data-togglable="Inherited properties"><a data-name="-793441183%2FProperties%2F-943990174" anchor-label="context" id="-793441183%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag/index.html#-793441183%2FProperties%2F-943990174"><span><span>context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-793441183%2FProperties%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Inherited properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><a data-name="-793441183%2FProperties%2F-943990174" anchor-label="context" id="-793441183%2FProperties%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-plug-pag/index.html#-793441183%2FProperties%2F-943990174">context</a><span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-2080615812%2FFunctions%2F-943990174" anchor-label="asyncAbort" id="-2080615812%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-abort.html"><span>async</span><wbr></wbr><span><span>Abort</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2080615812%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-abort.html"><span class="token function">asyncAbort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-abort-listener/index.html">PlugPagAbortListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de cancelamento da operação em execução de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1478770377%2FFunctions%2F-943990174" anchor-label="asyncAbortNFC" id="1478770377%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-abort-n-f-c.html"><span>async</span><wbr></wbr><span>Abort</span><wbr></wbr><span><span>NFC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1478770377%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-abort-n-f-c.html"><span class="token function">asyncAbortNFC</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-abort-listener/index.html">PlugPagAbortListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de cancelamento de uma operação de leitura/escrita NFC de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1960785879%2FFunctions%2F-943990174" anchor-label="asyncCalculateInstallments" id="-1960785879%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-calculate-installments.html"><span>async</span><wbr></wbr><span>Calculate</span><wbr></wbr><span><span>Installments</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1960785879%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-calculate-installments.html"><span class="token function">asyncCalculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-installments-listener/index.html">PlugPagInstallmentsListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa o cálculo de valor das parcelas de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1225360135%2FFunctions%2F-943990174" anchor-label="asyncDeactivate" id="-1225360135%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-deactivate.html"><span>async</span><wbr></wbr><span><span>Deactivate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1225360135%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-deactivate.html"><span class="token function">asyncDeactivate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activationData<span class="token operator">: </span><a href="../-plug-pag-activation-data/index.html">PlugPagActivationData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-activation-listener/index.html">PlugPagActivationListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa a desativação do terminal de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1057355279%2FFunctions%2F-943990174" anchor-label="asyncGetLastApprovedTransaction" id="-1057355279%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-get-last-approved-transaction.html"><span>async</span><wbr></wbr><span>Get</span><wbr></wbr><span>Last</span><wbr></wbr><span>Approved</span><wbr></wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1057355279%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-get-last-approved-transaction.html"><span class="token function">asyncGetLastApprovedTransaction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-last-transaction-listener/index.html">PlugPagLastTransactionListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Obtém a última transação aprovada de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1400154512%2FFunctions%2F-943990174" anchor-label="asyncIsAuthenticated" id="-1400154512%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-is-authenticated.html"><span>async</span><wbr></wbr><span>Is</span><wbr></wbr><span><span>Authenticated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400154512%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-is-authenticated.html"><span class="token function">asyncIsAuthenticated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isActivatedListener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-is-activated-listener/index.html">PlugPagIsActivatedListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Verifica se existe um usuário autenticado de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2081556127%2FFunctions%2F-943990174" anchor-label="asyncReadNFC" id="-2081556127%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-read-n-f-c.html"><span>async</span><wbr></wbr><span>Read</span><wbr></wbr><span><span>NFC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2081556127%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-read-n-f-c.html"><span class="token function">asyncReadNFC</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../-plug-pag-near-field-card-data/index.html">PlugPagNearFieldCardData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-n-f-c-listener/index.html">PlugPagNFCListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de leitura de um cartão NFC de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="763725385%2FFunctions%2F-943990174" anchor-label="asyncReprintCustomerReceipt" id="763725385%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-reprint-customer-receipt.html"><span>async</span><wbr></wbr><span>Reprint</span><wbr></wbr><span>Customer</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="763725385%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-reprint-customer-receipt.html"><span class="token function">asyncReprintCustomerReceipt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de reimpressão da via do cliente de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1657198794%2FFunctions%2F-943990174" anchor-label="asyncReprintEstablishmentReceipt" id="-1657198794%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-reprint-establishment-receipt.html"><span>async</span><wbr></wbr><span>Reprint</span><wbr></wbr><span>Establishment</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1657198794%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-reprint-establishment-receipt.html"><span class="token function">asyncReprintEstablishmentReceipt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de reimpressão da via do estabelecimento de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1393004538%2FFunctions%2F-943990174" anchor-label="asyncSetStyles" id="-1393004538%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-set-styles.html"><span>async</span><wbr></wbr><span>Set</span><wbr></wbr><span><span>Styles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393004538%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-set-styles.html"><span class="token function">asyncSetStyles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">styleData<span class="token operator">: </span><a href="../-plug-pag-style-data/index.html">PlugPagStyleData</a><span class="token punctuation">, </span></span><span class="parameter ">isSetStylesListener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-set-styles-listener/index.html">PlugPagSetStylesListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de definição de cores do design dos aplicativos de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1065818144%2FFunctions%2F-943990174" anchor-label="asyncWriteNFC" id="-1065818144%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="async-write-n-f-c.html"><span>async</span><wbr></wbr><span>Write</span><wbr></wbr><span><span>NFC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1065818144%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="async-write-n-f-c.html"><span class="token function">asyncWriteNFC</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../-plug-pag-near-field-card-data/index.html">PlugPagNearFieldCardData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-n-f-c-listener/index.html">PlugPagNFCListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de escrita em um cartão NFC de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1232850494%2FFunctions%2F-943990174" anchor-label="disposeSubscriber" id="1232850494%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="dispose-subscriber.html"><span>dispose</span><wbr></wbr><span><span>Subscriber</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1232850494%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose-subscriber.html"><span class="token function">disposeSubscriber</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Descarta as tarefas assíncronas.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-105558713%2FFunctions%2F-943990174" anchor-label="doAsyncApduCommand" id="-105558713%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="do-async-apdu-command.html"><span>do</span><wbr></wbr><span>Async</span><wbr></wbr><span>Apdu</span><wbr></wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105558713%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="do-async-apdu-command.html"><span class="token function">doAsyncApduCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">command<span class="token operator">: </span><span data-unresolved-link="kotlin/ByteArray///PointingToDeclaration/">ByteArray</span><span class="token punctuation">, </span></span><span class="parameter ">dataLength<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-a-p-d-u-cmd-exchange-listener/index.html">PlugPagAPDUCmdExchangeListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de chamada APDU (Application Protocol Data Unit) de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="71092864%2FFunctions%2F-943990174" anchor-label="doAsyncInitializeAndActivatePinpad" id="71092864%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="do-async-initialize-and-activate-pinpad.html"><span>do</span><wbr></wbr><span>Async</span><wbr></wbr><span>Initialize</span><wbr></wbr><span>And</span><wbr></wbr><span>Activate</span><wbr></wbr><span><span>Pinpad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="71092864%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="do-async-initialize-and-activate-pinpad.html"><span class="token function">doAsyncInitializeAndActivatePinpad</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activationData<span class="token operator">: </span><a href="../-plug-pag-activation-data/index.html">PlugPagActivationData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-activation-listener/index.html">PlugPagActivationListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de inicialização e ativação do terminal de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1700030342%2FFunctions%2F-943990174" anchor-label="doAsyncPayment" id="1700030342%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="do-async-payment.html"><span>do</span><wbr></wbr><span>Async</span><wbr></wbr><span><span>Payment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1700030342%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="do-async-payment.html"><span class="token function">doAsyncPayment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paymentData<span class="token operator">: </span><a href="../-plug-pag-payment-data/index.html">PlugPagPaymentData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-payment-listener/index.html">PlugPagPaymentListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de transação de forma assíncrona</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-422702366%2FFunctions%2F-943990174" anchor-label="doAsyncVoidPayment" id="-422702366%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="do-async-void-payment.html"><span>do</span><wbr></wbr><span>Async</span><wbr></wbr><span>Void</span><wbr></wbr><span><span>Payment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-422702366%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="do-async-void-payment.html"><span class="token function">doAsyncVoidPayment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">voidData<span class="token operator">: </span><a href="../-plug-pag-void-data/index.html">PlugPagVoidData</a><span class="token punctuation">, </span></span><span class="parameter ">listener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-payment-listener/index.html">PlugPagPaymentListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de estorno de forma assíncrona.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1614874911%2FFunctions%2F-943990174" anchor-label="getEventListener" id="-1614874911%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-event-listener.html"><span>get</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1614874911%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-event-listener.html">T</a><span class="token operator">&gt; </span><a href="get-event-listener.html"><span class="token function">getEventListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="get-event-listener.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-event-listener/index.html">PlugPagEventListener</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1756429570%2FFunctions%2F-943990174" anchor-label="getPrinterListener" id="1756429570%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-printer-listener.html"><span>get</span><wbr></wbr><span>Printer</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1756429570%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-printer-listener.html"><span class="token function">getPrinterListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paymentListener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-payment-listener/index.html">PlugPagPaymentListener</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inherited functions</h2>
+      <div class="table" data-togglable="Inherited functions"><a data-name="-125390429%2FFunctions%2F-943990174" anchor-label="abort" id="-125390429%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/abort.html"><span><span>abort</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-125390429%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/abort.html"><span class="token function">abort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-abort-result/index.html">PlugPagAbortResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de cancelamento da operação em execução.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-395671690%2FFunctions%2F-943990174" anchor-label="abortNFC" id="-395671690%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-395671690%2FFunctions%2F-943990174"><span>abort</span><wbr></wbr><span><span>NFC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-395671690%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-395671690%2FFunctions%2F-943990174"><span class="token function">abortNFC</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-n-f-c-result/index.html">PlugPagNFCResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de cancelamento de leitura ou escrita NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1126435517%2FFunctions%2F-943990174" anchor-label="apduCommand" id="-1126435517%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-1126435517%2FFunctions%2F-943990174"><span>apdu</span><wbr></wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1126435517%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-1126435517%2FFunctions%2F-943990174"><span class="token function">apduCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">command<span class="token operator">: </span><span data-unresolved-link="kotlin/ByteArray///PointingToDeclaration/">ByteArray</span><span class="token punctuation">, </span></span><span class="parameter ">dataLength<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.result/-plug-pag-cmd-exchange-result/index.html">PlugPagCmdExchangeResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de comando APDU (Application Protocol Data Unit).</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1521408021%2FFunctions%2F-943990174" anchor-label="authNFCCardDirectly" id="-1521408021%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag/index.html#-1862795186%2FFunctions%2F-943990174"><span>auth</span><wbr></wbr><span>NFCCard</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1521408021%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-plug-pag/index.html#-1862795186%2FFunctions%2F-943990174"><span class="token function">authNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">authData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-n-f-c-auth/index.html">PlugPagNFCAuth</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de autenticação direta em um cartão NFC já considerando seu limite de tempo para autenticação como 10 segundos.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#1615134799%2FFunctions%2F-943990174"><span class="token function">authNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">authData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-n-f-c-auth/index.html">PlugPagNFCAuth</a><span class="token punctuation">, </span></span><span class="parameter ">timeout<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de autenticação direta em um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1083546060%2FFunctions%2F-943990174" anchor-label="beep" id="1083546060%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#1083546060%2FFunctions%2F-943990174"><span><span>beep</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1083546060%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#1083546060%2FFunctions%2F-943990174"><span class="token function">beep</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">beepData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-beep-data/index.html">PlugPagBeepData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa um alerta sonoro.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2087420977%2FFunctions%2F-943990174" anchor-label="calculateInstallments" id="2087420977%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/calculate-installments.html"><span>calculate</span><wbr></wbr><span><span>Installments</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2087420977%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/calculate-installments.html"><span class="token function"><strike>calculateInstallments</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Executa o cálculo de valor das parcelas de um parcelamento do tipo <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-plug-pag-installment/index.html">PlugPagInstallment</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Executa o cálculo de valor das parcelas.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1783945999%2FFunctions%2F-943990174" anchor-label="checkPermissionPlugPagService" id="1783945999%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/check-permission-plug-pag-service.html"><span>check</span><wbr></wbr><span>Permission</span><wbr></wbr><span>Plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1783945999%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/check-permission-plug-pag-service.html"><span class="token function">checkPermissionPlugPagService</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Executa uma validação de permissões necessárias para executar as funcionalidades do WrapperPPS.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2066675519%2FFunctions%2F-943990174" anchor-label="deactivate" id="-2066675519%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/deactivate.html"><span><span>deactivate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2066675519%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/deactivate.html"><span class="token function">deactivate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activationData<span class="token operator">: </span><a href="../-plug-pag-activation-data/index.html">PlugPagActivationData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-initialization-result/index.html">PlugPagInitializationResult</a></div><div class="brief "><p class="paragraph">Executa a desativação do terminal.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-868956636%2FFunctions%2F-943990174" anchor-label="detectNfcCardDirectly" id="-868956636%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-868956636%2FFunctions%2F-943990174"><span>detect</span><wbr></wbr><span>Nfc</span><wbr></wbr><span>Card</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-868956636%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-868956636%2FFunctions%2F-943990174"><span class="token function">detectNfcCardDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">timeout<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.result/-plug-pag-n-f-c-infos-result-directly/index.html">PlugPagNFCInfosResultDirectly</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de detecção detecção direta de informações de um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="748173075%2FFunctions%2F-943990174" anchor-label="detectNfcRemoveDirectly" id="748173075%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#748173075%2FFunctions%2F-943990174"><span>detect</span><wbr></wbr><span>Nfc</span><wbr></wbr><span>Remove</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="748173075%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#748173075%2FFunctions%2F-943990174"><span class="token function">detectNfcRemoveDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">detectRemove<span class="token operator">: </span><a href="../-plug-pag-n-f-c-detect-remove-card/index.html">PlugPagNFCDetectRemoveCard</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de detecção de remoção de um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="599520826%2FFunctions%2F-943990174" anchor-label="doEffectuatePreAuto" id="599520826%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/do-effectuate-pre-auto.html"><span>do</span><wbr></wbr><span>Effectuate</span><wbr></wbr><span>Pre</span><wbr></wbr><span><span>Auto</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="599520826%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-effectuate-pre-auto.html"><span class="token function">doEffectuatePreAuto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">effectuatePreAutoData<span class="token operator">: </span><a href="../-plug-pag-effectuate-pre-auto-data/index.html">PlugPagEffectuatePreAutoData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de efetivação de uma transação pré-autorizada.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-858215242%2FFunctions%2F-943990174" anchor-label="doPayment" id="-858215242%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/do-payment.html"><span>do</span><wbr></wbr><span><span>Payment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-858215242%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-payment.html"><span class="token function">doPayment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paymentData<span class="token operator">: </span><a href="../-plug-pag-payment-data/index.html">PlugPagPaymentData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de transação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="218868343%2FFunctions%2F-943990174" anchor-label="doPreAutoCancel" id="218868343%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/do-pre-auto-cancel.html"><span>do</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Cancel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="218868343%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-pre-auto-cancel.html"><span class="token function">doPreAutoCancel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transactionId<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">transactionCode<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de cancelamento de uma transação pré-autorizada.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2078213013%2FFunctions%2F-943990174" anchor-label="doPreAutoCreate" id="2078213013%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/do-pre-auto-create.html"><span>do</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2078213013%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-data/index.html">PlugPagPreAutoData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoKeyingData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-keying-data/index.html">PlugPagPreAutoKeyingData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada digitada.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-34966651%2FFunctions%2F-943990174" anchor-label="doPrintAction" id="-34966651%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/do-print-action.html"><span>do</span><wbr></wbr><span>Print</span><wbr></wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-34966651%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/do-print-action.html"><span class="token function">doPrintAction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">phoneNumber<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Ação a ser executada durante uma impressão.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1842144253%2FFunctions%2F-943990174" anchor-label="getCardData" id="-1842144253%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/get-card-data.html"><span>get</span><wbr></wbr><span>Card</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1842144253%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/get-card-data.html"><span class="token function">getCardData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-card-info-result/index.html">PlugPagCardInfoResult</a></div><div class="brief "><p class="paragraph">Obtém dados de um cartão de pagamentos através de uma leitura do mesmo.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="95363248%2FFunctions%2F-943990174" anchor-label="getKeyedInPreAutoData" id="95363248%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/get-keyed-in-pre-auto-data.html"><span>get</span><wbr></wbr><span>Keyed</span><wbr></wbr><span>In</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="95363248%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/get-keyed-in-pre-auto-data.html"><span class="token function">getKeyedInPreAutoData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoQueryData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-query-data/index.html">PlugPagPreAutoQueryData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma consulta de pré-autorização via digitação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="359910860%2FFunctions%2F-943990174" anchor-label="getLastApprovedTransaction" id="359910860%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/get-last-approved-transaction.html"><span>get</span><wbr></wbr><span>Last</span><wbr></wbr><span>Approved</span><wbr></wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="359910860%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/get-last-approved-transaction.html"><span class="token function">getLastApprovedTransaction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Obtém a última transação aprovada.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1296302039%2FFunctions%2F-943990174" anchor-label="getNFCInfos" id="1296302039%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#1296302039%2FFunctions%2F-943990174"><span>get</span><wbr></wbr><span><span>NFCInfos</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296302039%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#1296302039%2FFunctions%2F-943990174"><span class="token function">getNFCInfos</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.result/-plug-pag-n-f-c-infos-result/index.html">PlugPagNFCInfosResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de consulta de informações de um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="744644176%2FFunctions%2F-943990174" anchor-label="getPreAutoData" id="744644176%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/get-pre-auto-data.html"><span>get</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="744644176%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/get-pre-auto-data.html"><span class="token function"><strike>getPreAutoData</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-query-data/index.html">PlugPagPreAutoQueryData</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de consulta de transação pré-autorização.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-973201107%2FFunctions%2F-943990174" anchor-label="getPreAutoList" id="-973201107%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/get-pre-auto-list.html"><span>get</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-973201107%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/get-pre-auto-list.html"><span class="token function">getPreAutoList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-pre-auto-query-result/index.html">PlugPagPreAutoQueryResult</a></div><div class="brief "><p class="paragraph">Executa uma consulta de pré-autorização via cartão.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1917708264%2FFunctions%2F-943990174" anchor-label="getUserData" id="-1917708264%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-1917708264%2FFunctions%2F-943990174"><span>get</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1917708264%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-1917708264%2FFunctions%2F-943990174"><span class="token function">getUserData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-user-data-result/index.html">PlugPagUserDataResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de consulta de dados do usuário do terminal.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1200114207%2FFunctions%2F-943990174" anchor-label="hasCapability" id="1200114207%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/has-capability.html"><span>has</span><wbr></wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1200114207%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/has-capability.html"><span class="token function">hasCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capability<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Verifica se o terminal tem uma funcionalidade específica.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="992098321%2FFunctions%2F-943990174" anchor-label="hasSoftwareCapability" id="992098321%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/has-software-capability.html"><span>has</span><wbr></wbr><span>Software</span><wbr></wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="992098321%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/has-software-capability.html"><span class="token function">hasSoftwareCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">operation<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/has-software-capability.html"><span class="token function">hasSoftwareCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">operation<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span><span class="token punctuation">, </span></span><span class="parameter ">mode<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Verifica se a PlugPagService tem uma funcionalidade específica.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1131685529%2FFunctions%2F-943990174" anchor-label="initializeAndActivatePinpad" id="1131685529%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/initialize-and-activate-pinpad.html"><span>initialize</span><wbr></wbr><span>And</span><wbr></wbr><span>Activate</span><wbr></wbr><span><span>Pinpad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1131685529%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/initialize-and-activate-pinpad.html"><span class="token function">initializeAndActivatePinpad</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activationData<span class="token operator">: </span><a href="../-plug-pag-activation-data/index.html">PlugPagActivationData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-initialization-result/index.html">PlugPagInitializationResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de inicialização e ativação do terminal.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-934468005%2FFunctions%2F-943990174" anchor-label="initPagBankActivation" id="-934468005%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/init-pag-bank-activation.html"><span>init</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Bank</span><wbr></wbr><span><span>Activation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-934468005%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/init-pag-bank-activation.html"><span class="token function">initPagBankActivation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-pag-bank-activation-result/index.html">PlugPagPagBankActivationResult</a></div><div class="brief "><p class="paragraph">Executa uma ativação através do QRCode do PagBank.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-354643020%2FFunctions%2F-943990174" anchor-label="invalidateAuthentication" id="-354643020%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/invalidate-authentication.html"><span>invalidate</span><wbr></wbr><span><span>Authentication</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-354643020%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/invalidate-authentication.html"><span class="token function">invalidateAuthentication</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa uma limpeza em todos os dados relacionados a autenticação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2092291022%2FFunctions%2F-943990174" anchor-label="isAuthenticated" id="2092291022%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/is-authenticated.html"><span>is</span><wbr></wbr><span><span>Authenticated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2092291022%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/is-authenticated.html"><span class="token function">isAuthenticated</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Verifica se existe um usuário autenticado.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="64489103%2FFunctions%2F-943990174" anchor-label="isServiceBusy" id="64489103%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/is-service-busy.html"><span>is</span><wbr></wbr><span>Service</span><wbr></wbr><span><span>Busy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="64489103%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/is-service-busy.html"><span class="token function">isServiceBusy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Verifica se o serviço da PlugPag está ocupado.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-887397636%2FFunctions%2F-943990174" anchor-label="justAuthNfcDirectly" id="-887397636%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-887397636%2FFunctions%2F-943990174"><span>just</span><wbr></wbr><span>Auth</span><wbr></wbr><span>Nfc</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-887397636%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-887397636%2FFunctions%2F-943990174"><span class="token function">justAuthNfcDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagNFCAuthDirectly<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-n-f-c-auth-directly/index.html">PlugPagNFCAuthDirectly</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de autenticação do cartão NFC diretamente pelo hardware.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="17335586%2FFunctions%2F-943990174" anchor-label="printFromFile" id="17335586%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#17335586%2FFunctions%2F-943990174"><span>print</span><wbr></wbr><span>From</span><wbr></wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="17335586%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#17335586%2FFunctions%2F-943990174"><span class="token function">printFromFile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">printerData<span class="token operator">: </span><a href="../-plug-pag-printer-data/index.html">PlugPagPrinterData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-print-result/index.html">PlugPagPrintResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de impressão através do caminho de um arquivo local.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-817766800%2FFunctions%2F-943990174" anchor-label="readFromNFCCard" id="-817766800%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-817766800%2FFunctions%2F-943990174"><span>read</span><wbr></wbr><span>From</span><wbr></wbr><span><span>NFCCard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-817766800%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-817766800%2FFunctions%2F-943990174"><span class="token function">readFromNFCCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../-plug-pag-near-field-card-data/index.html">PlugPagNearFieldCardData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-n-f-c-result/index.html">PlugPagNFCResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de leitura de um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-677992656%2FFunctions%2F-943990174" anchor-label="readNFCCardDirectly" id="-677992656%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-677992656%2FFunctions%2F-943990174"><span>read</span><wbr></wbr><span>NFCCard</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677992656%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-677992656%2FFunctions%2F-943990174"><span class="token function">readNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-simple-n-f-c-data/index.html">PlugPagSimpleNFCData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-n-f-c-result/index.html">PlugPagNFCResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de leitura direta em um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-503492664%2FFunctions%2F-943990174" anchor-label="reboot" id="-503492664%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-503492664%2FFunctions%2F-943990174"><span><span>reboot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-503492664%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-503492664%2FFunctions%2F-943990174"><span class="token function">reboot</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa a reinicialização do terminal.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2063970649%2FFunctions%2F-943990174" anchor-label="reprintCustomerReceipt" id="-2063970649%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/reprint-customer-receipt.html"><span>reprint</span><wbr></wbr><span>Customer</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2063970649%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/reprint-customer-receipt.html"><span class="token function">reprintCustomerReceipt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-print-result/index.html">PlugPagPrintResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de reimpressão da via do cliente.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-482042373%2FFunctions%2F-943990174" anchor-label="reprintStablishmentReceipt" id="-482042373%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/reprint-stablishment-receipt.html"><span>reprint</span><wbr></wbr><span>Stablishment</span><wbr></wbr><span><span>Receipt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-482042373%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/reprint-stablishment-receipt.html"><span class="token function">reprintStablishmentReceipt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-print-result/index.html">PlugPagPrintResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de reimpressão da via do estabelecimento.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="511112427%2FFunctions%2F-943990174" anchor-label="sendReceiptSMS" id="511112427%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/send-receipt-s-m-s.html"><span>send</span><wbr></wbr><span>Receipt</span><wbr></wbr><span><span>SMS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511112427%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/send-receipt-s-m-s.html"><span class="token function">sendReceiptSMS</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">smsData<span class="token operator">: </span><a href="../-plug-pag-receipt-s-m-s-data/index.html">PlugPagReceiptSMSData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de envio de comprovante via SMS.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1386231323%2FFunctions%2F-943990174" anchor-label="setEventListener" id="1386231323%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/set-event-listener.html"><span>set</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1386231323%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/set-event-listener.html"><span class="token function">setEventListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../-plug-pag-event-listener/index.html">PlugPagEventListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Define os métodos a serem chamados quando existem novos eventos de pagamento, estorno, desativação ou ativação.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1845498660%2FFunctions%2F-943990174" anchor-label="setLed" id="1845498660%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#1845498660%2FFunctions%2F-943990174"><span>set</span><wbr></wbr><span><span>Led</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1845498660%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#1845498660%2FFunctions%2F-943990174"><span class="token function">setLed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ledData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-led-data/index.html">PlugPagLedData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de definição do LED que será usado em ações que usam o mesmo.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-105881535%2FFunctions%2F-943990174" anchor-label="setPlugPagCustomPrinterLayout" id="-105881535%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/set-plug-pag-custom-printer-layout.html"><span>set</span><wbr></wbr><span>Plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Custom</span><wbr></wbr><span>Printer</span><wbr></wbr><span><span>Layout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105881535%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/set-plug-pag-custom-printer-layout.html"><span class="token function">setPlugPagCustomPrinterLayout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagCustomPrinterLayout<span class="token operator">: </span><a href="../-plug-pag-custom-printer-layout/index.html">PlugPagCustomPrinterLayout</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa a customização dos elementos da tela de impressão da via do cliente.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1199151177%2FFunctions%2F-943990174" anchor-label="setPrintActionListener" id="1199151177%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/set-print-action-listener.html"><span>set</span><wbr></wbr><span>Print</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1199151177%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/set-print-action-listener.html"><span class="token function">setPrintActionListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">printListener<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.listeners/-plug-pag-print-action-listener/index.html">PlugPagPrintActionListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-print-action-result/index.html">PlugPagPrintActionResult</a></div><div class="brief "><p class="paragraph">Define os métodos a serem chamados durante uma ação relacionada a impressão.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2052201957%2FFunctions%2F-943990174" anchor-label="setPrinterListener" id="-2052201957%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/set-printer-listener.html"><span>set</span><wbr></wbr><span>Printer</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2052201957%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/set-printer-listener.html"><span class="token function">setPrinterListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../-plug-pag-printer-listener/index.html">PlugPagPrinterListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Define os métodos a serem chamados durante uma impressão.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1114614913%2FFunctions%2F-943990174" anchor-label="setStyleData" id="1114614913%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/set-style-data.html"><span>set</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1114614913%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/set-style-data.html"><span class="token function">setStyleData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">styleData<span class="token operator">: </span><a href="../-plug-pag-style-data/index.html">PlugPagStyleData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de definição de cores a serem usadas no design das telas fornecidas pela PlugPagService.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="342789474%2FFunctions%2F-943990174" anchor-label="startNFCCardDirectly" id="342789474%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#342789474%2FFunctions%2F-943990174"><span>start</span><wbr></wbr><span>NFCCard</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="342789474%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#342789474%2FFunctions%2F-943990174"><span class="token function">startNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de ligar a antena do sistema de NFC em uso.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-60972618%2FFunctions%2F-943990174" anchor-label="startOnBoarding" id="-60972618%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/start-on-boarding.html"><span>start</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Boarding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60972618%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/start-on-boarding.html"><span class="token function">startOnBoarding</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Executa a aplicação &quot;Boas Vindas&quot; caso a mesma esteja instalada e o terminal esteja desativado.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1663279334%2FFunctions%2F-943990174" anchor-label="stopNFCCardDirectly" id="-1663279334%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-1663279334%2FFunctions%2F-943990174"><span>stop</span><wbr></wbr><span>NFCCard</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1663279334%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-1663279334%2FFunctions%2F-943990174"><span class="token function">stopNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de parada da antena do sistema de NFC em uso.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-841853359%2FFunctions%2F-943990174" anchor-label="unbindService" id="-841853359%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag/index.html#-841853359%2FFunctions%2F-943990174"><span>unbind</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-841853359%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-plug-pag/index.html#-841853359%2FFunctions%2F-943990174"><span class="token function">unbindService</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Desvincula o serviço de pagamentos.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1594666742%2FFunctions%2F-943990174" anchor-label="updateRemoteConfig" id="1594666742%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/update-remote-config.html"><span>update</span><wbr></wbr><span>Remote</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1594666742%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/update-remote-config.html"><span class="token function">updateRemoteConfig</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa a atualização dos dados de configuração remota.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1945796725%2FFunctions%2F-943990174" anchor-label="voidPayment" id="1945796725%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/void-payment.html"><span>void</span><wbr></wbr><span><span>Payment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1945796725%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/void-payment.html"><span class="token function">voidPayment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">voidData<span class="token operator">: </span><a href="../-plug-pag-void-data/index.html">PlugPagVoidData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><div class="brief "><p class="paragraph">Executa uma solicitação de estorno.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-83356494%2FFunctions%2F-943990174" anchor-label="writeToNFCCard" id="-83356494%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#-83356494%2FFunctions%2F-943990174"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span><span>NFCCard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83356494%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#-83356494%2FFunctions%2F-943990174"><span class="token function">writeToNFCCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../-plug-pag-near-field-card-data/index.html">PlugPagNearFieldCardData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-n-f-c-result/index.html">PlugPagNFCResult</a></div><div class="brief "><p class="paragraph">Realiza escrita em um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1518529700%2FFunctions%2F-943990174" anchor-label="writeToNFCCardDirectly" id="1518529700%2FFunctions%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-i-plug-pag-wrapper/index.html#1518529700%2FFunctions%2F-943990174"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span>NFCCard</span><wbr></wbr><span><span>Directly</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1518529700%2FFunctions%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-i-plug-pag-wrapper/index.html#1518529700%2FFunctions%2F-943990174"><span class="token function">writeToNFCCardDirectly</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardData<span class="token operator">: </span><a href="../../br.com.uol.pagseguro.plugpagservice.wrapper.data.request/-plug-pag-simple-n-f-c-data/index.html">PlugPagSimpleNFCData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Executa uma solicitação de escrita direta em um cartão NFC.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Inheritors</h2>
+      <div class="table" data-togglable="Inheritors"><a data-name="904261636%2FInheritors%2F-943990174" anchor-label="PlugPag" id="904261636%2FInheritors%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+        <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-plug-pag/index.html">PlugPag</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="904261636%2FInheritors%2F-943990174"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

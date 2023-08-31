@@ -98,11 +98,11 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagPrinterListener {
-    override fun onSuccess(data: PlugPagPrintResult) {
+    override fun onSuccess(result: PlugPagPrintResult) {
         // Ação a ser executada após uma impressão com sucesso.
     }
 
-    override fun onError(data: PlugPagPrintResult) {
+    override fun onError(result: PlugPagPrintResult) {
         // Ação a ser executada ao ocorrer uma falha na impressão.
     }
 }

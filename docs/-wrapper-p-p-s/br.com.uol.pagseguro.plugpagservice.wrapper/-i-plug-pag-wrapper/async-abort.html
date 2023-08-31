@@ -98,7 +98,7 @@ fun main() {
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
 val listener = object : PlugPagAbortListener {
-    override fun onAbortRequested(abortRequested: Boolean) {
+    override fun onAbortRequested(abortResult: Boolean) {
         // Ação a ser executada ao solicitar o cancelamento assíncrono.
     }
 

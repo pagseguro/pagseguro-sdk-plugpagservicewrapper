@@ -101,11 +101,11 @@ val listener = object : PlugPagPrintActionListener {
     override fun onPrint(
         phoneNumber: String?,
         transactionResult: PlugPagTransactionResult?,
-        callback: PlugPagPrintActionListener.PlugPagPrintTypeCallback?
+        onFinishActions: PlugPagPrintActionListener.OnFinishPlugPagPrintActions?
     ) {
         // Ação a ser executada durante a impressão.
 
-        callback?.let {
+        onFinishActions?.let {
             // Realiza a impressão do comprovante de transação (via do cliente).
             it.doPrint(plugPag)
 
