@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Jul 03 15:17:54 BRT 2024
+wrapper-1.29.0.aar>=
+wrapper-1.29.0.pom>=
