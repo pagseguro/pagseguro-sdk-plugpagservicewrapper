@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>calculateInstallments</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,12 +19,13 @@
         }
     }
     </script>
-<script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
@@ -32,31 +34,39 @@
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>WrapperPPS</span>
-            </a>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            WrapperPPS
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":WrapperPPS:dokkaHtml/main">androidJvm</button>
+        </div>
     </div>
-    <div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/IPlugPagWrapper/calculateInstallments/#kotlin.String#kotlin.Int/PointingToDeclaration//-943990174">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="WrapperPPS::br.com.uol.pagseguro.plugpagservice.wrapper/IPlugPagWrapper/calculateInstallments/#kotlin.String#kotlin.Int/PointingToDeclaration//-943990174">
   <div class="breadcrumbs"><a href="../../../index.html">WrapperPPS</a><span class="delimiter">/</span><a href="../index.html">br.com.uol.pagseguro.plugpagservice.wrapper</a><span class="delimiter">/</span><a href="index.html">IPlugPagWrapper</a><span class="delimiter">/</span><span class="current">calculateInstallments</span></div>
   <div class="cover ">
     <h1 class="cover"><span>calculate</span><wbr></wbr><span><span>Installments</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-plug-pag-installment/index.html">PlugPagInstallment</a><span class="token operator">&gt;</span></div><p class="paragraph">Executa o cálculo de valor das parcelas.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, sendo cada uma delas uma instânca de <a href="../-plug-pag-installment/index.html">PlugPagInstallment</a>.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function">calculateInstallments</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">installmentType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-plug-pag-installment/index.html">PlugPagInstallment</a><span class="token operator">&gt;</span></div><p class="paragraph">Executa o cálculo de valor das parcelas.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, sendo cada uma delas uma instânca de <a href="../-plug-pag-installment/index.html">PlugPagInstallment</a>.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>installment</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Tipo de parcelamento, podendo ser: <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-a_-v-i-s-t-a.html">PlugPag.INSTALLMENT_TYPE_A_VISTA</a>, <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-v-e-n-d-e-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_VENDEDOR</a> e <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
 import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
@@ -106,7 +116,7 @@ installments.forEach { parcela -&gt;
     // Lista com cada valor de parcela.
 } 
    //sampleEnd
-}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>installment</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Tipo de parcelamento, podendo ser: <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-a_-v-i-s-t-a.html">PlugPag.INSTALLMENT_TYPE_A_VISTA</a>, <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-v-e-n-d-e-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_VENDEDOR</a> e <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function"><strike>calculateInstallments</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">Essa funcionalidade foi descontinuada e será removida em futuras atualizações.</p><h4 class="">Replace with</h4><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag<br></code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">calculateInstallments(saleValue = saleValue, installmentType = PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div><p class="paragraph">Executa o cálculo de valor das parcelas de um parcelamento do tipo <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, seguindo o padrão: “R$ ##,##”.</p></span><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-installments.html"><span class="token function"><strike>calculateInstallments</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">saleValue<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><div class="deprecation-content"><h3 class="">Deprecated</h3><p class="paragraph">Essa funcionalidade foi descontinuada e será removida em futuras atualizações.</p><h4 class="">Replace with</h4><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag<br></code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="sample-container"><pre><code class="monospace block lang-kotlin" theme="idea">calculateInstallments(saleValue = saleValue, installmentType = PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div><p class="paragraph">Executa o cálculo de valor das parcelas de um parcelamento do tipo <a href="../-plug-pag/-companion/-i-n-s-t-a-l-l-m-e-n-t_-t-y-p-e_-p-a-r-c_-c-o-m-p-r-a-d-o-r.html">PlugPag.INSTALLMENT_TYPE_PARC_COMPRADOR</a>.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores de cada parcela, seguindo o padrão: “R$ ##,##”.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
 import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
@@ -153,14 +163,15 @@ installments.forEach { parcela -&gt;
     // Lista com cada valor de parcela.
 } 
    //sampleEnd
-}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>sale</span><wbr></wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Valor da venda em centavos. Por exemplo, uma transação de &quot;R$ 10,00&quot;, terá como valor 1000.</p></div></div></div></div></div></div></div></div></div>
+}</code></pre></div></div></div>
 </div>
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>

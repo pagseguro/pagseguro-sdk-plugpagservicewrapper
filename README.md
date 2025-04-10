@@ -25,7 +25,7 @@ allprojects {
 
 Em seguida inclua a seguinte dependencia no gradle do modulo:
 ```
-implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.29.5'
+implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.30.51'
 ```
 
 ## **Documentação**
@@ -41,7 +41,7 @@ No build.gradle do projeto:
 
 ```
 buildscript {
-	ext.kotlin_version = ‘1.7.20’
+	ext.kotlin_version = ‘1.9.0’
 	...
 	dependencies {
 		...
