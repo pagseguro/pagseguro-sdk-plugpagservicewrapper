@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>WrapperPPS</title>
     <link href="images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,12 +19,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
 <link href="styles/style.css" rel="Stylesheet">
-<link href="styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="styles/main.css" rel="Stylesheet">
 <link href="styles/prism.css" rel="Stylesheet">
 <link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
 <script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
@@ -32,25 +34,33 @@
 <script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="index.html">
-                    <span>WrapperPPS</span>
-            </a>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="index.html">
+                            WrapperPPS
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":WrapperPPS:dokkaHtml/main">androidJvm</button>
+        </div>
     </div>
-    <div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
 <div class="main-content" id="content" pageIds="WrapperPPS::////PointingToDeclaration//-943990174">
   <div class="breadcrumbs"></div>
   <div class="cover ">
@@ -59,12 +69,12 @@
 <summary>Groovy</summary><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">allprojects {<br>    repositories {<br>        maven {<br>            url 'https://github.com/pagseguro/PlugPagServiceWrapper/raw/master'<br>        }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details>
 <details>
 <summary>Kotlin</summary><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">allprojects {<br>    repositories {<br>        maven(&quot;https://github.com/pagseguro/PlugPagServiceWrapper/raw/master&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details><h4 class=""> Adicionando dependência ao Gradle do módulo</h4><details open>
-<summary>Groovy</summary><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">dependencies {<br>    implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.29.5'<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details>
+<summary>Groovy</summary><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">dependencies {<br>    implementation 'br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.30.51'<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details>
 <details>
-<summary>Kotlin</summary><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">dependencies {<br>    implementation(&quot;br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.29.5&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details><h4 class=""> Pré-requisitos</h4><p class="paragraph">Para utilizar o PlugPagServiceWrapper, é necessária a inclusão de suporte ao Kotlin na aplicação - a versão mínima é 1.7.20. Para isso, adicione os códigos a seguir no <code class="lang-kotlin">Gradle</code> do projeto.</p><details open>
-<summary>Groovy</summary><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">buildscript {<br>    ext.kotlin_version = '1.7.20'<br>    dependencies {<br>        classpath &quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details>
+<summary>Kotlin</summary><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">dependencies {<br>    implementation(&quot;br.com.uol.pagseguro.plugpagservice.wrapper:wrapper:1.30.51&quot;)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details><h4 class=""> Pré-requisitos</h4><p class="paragraph">Para utilizar o PlugPagServiceWrapper, é necessária a inclusão de suporte ao Kotlin na aplicação - a versão mínima é 1.9.0. Para isso, adicione os códigos a seguir no <code class="lang-kotlin">Gradle</code> do projeto.</p><details open>
+<summary>Groovy</summary><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">buildscript {<br>    ext.kotlin_version = '1.9.0'<br>    dependencies {<br>        classpath &quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details>
 <details>
-<summary>Kotlin</summary><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">buildscript {<br>    ext.kotlin_version = &quot;1.7.20&quot;<br>    dependencies {<br>        classpath(&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details><h4 class=""> Observações importantes</h4><p class="paragraph">As funcionalidades de configuração de APN e impressão livre sem TerminalService foram desativadas, e ao serem chamadas através de versões de WrapperPPS antigas retornarão erro de descontinuação.</p></div></div>
+<summary>Kotlin</summary><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">buildscript {<br>    ext.kotlin_version = &quot;1.9.0&quot;<br>    dependencies {<br>        classpath(&quot;org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version&quot;)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></details><h4 class=""> Observações importantes</h4><p class="paragraph">As funcionalidades de configuração de APN e impressão livre sem TerminalService foram desativadas, e ao serem chamadas através de versões de WrapperPPS antigas retornarão erro de descontinuação.</p></div></div>
   </div>
   <h2 class="">Packages</h2>
   <div class="table"><a data-name="-1063774794%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper" id="-1063774794%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
@@ -76,7 +86,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1063774794%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="-1063774794%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper" id="-1063774794%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote raiz do WrapperPPS.</p>
@@ -92,7 +106,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="927434120%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="927434120%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.asyncplugpag" id="927434120%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote em que estão contidas funcionalidades assíncronas.</p>
@@ -108,7 +126,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1901598234%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
@@ -122,7 +144,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-584150329%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="-584150329%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.data.request" id="-584150329%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote em que estão contidas classes de dados para requisições, ou seja, valores necessários para  executar determinadas ações.</p>
@@ -138,11 +164,87 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2056175639%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="-2056175639%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.data.result" id="-2056175639%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote em que estão contidas classes de dados resultantes de requisições.</p>
           </span></div>
+      </div>
+    </div>
+<a data-name="-1943035230%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.deeplink" id="-1943035230%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-wrapper-p-p-s/br.com.uol.pagseguro.plugpagservice.wrapper.deeplink/index.html">br.com.uol.pagseguro.plugpagservice.wrapper.deeplink</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1943035230%2FPackages%2F-943990174"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="978560454%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.enums" id="978560454%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-wrapper-p-p-s/br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.enums/index.html">br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.enums</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978560454%2FPackages%2F-943990174"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="205043357%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.model" id="205043357%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-wrapper-p-p-s/br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.model/index.html">br.com.uol.pagseguro.plugpagservice.wrapper.deeplink.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="205043357%2FPackages%2F-943990174"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2046807186%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.device" id="2046807186%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-wrapper-p-p-s/br.com.uol.pagseguro.plugpagservice.wrapper.device/index.html">br.com.uol.pagseguro.plugpagservice.wrapper.device</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2046807186%2FPackages%2F-943990174"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
 <a data-name="-60999337%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.exception" id="-60999337%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
@@ -154,7 +256,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60999337%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="-60999337%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.exception" id="-60999337%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote em que estão contidas classes relacionadas a erros e exceções.</p>
@@ -170,7 +276,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="806702032%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
@@ -184,7 +294,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1903800135%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div><span class="brief-comment"><a data-name="1903800135%2FPackages%2F-943990174" anchor-label="br.com.uol.pagseguro.plugpagservice.wrapper.listeners" id="1903800135%2FPackages%2F-943990174" data-filterable-set=":WrapperPPS:dokkaHtml/main"></a>
             <p class="paragraph">Pacote em que estão contidas interfaces que contém métodos a serem chamados durante a execução de determinadas ações.</p>
@@ -200,7 +314,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-395589780%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
@@ -214,7 +332,11 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1444934889%2FPackages%2F-943990174"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div class="pull-right"></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
@@ -226,7 +348,8 @@
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
