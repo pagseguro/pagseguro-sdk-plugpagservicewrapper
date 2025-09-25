@@ -66,7 +66,7 @@
   <div class="cover ">
     <h1 class="cover"><span>do</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Create</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-data/index.html">PlugPagPreAutoData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores resultantes da solicitação da criação de transação pré-autorizada.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valores necessários para solicitação de criação da transação pré-autorizada.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":WrapperPPS:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-data/index.html">PlugPagPreAutoData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores resultantes da solicitação da criação de transação pré-autorizada.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valores necessários para solicitação de criação da transação pré-autorizada.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
 import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
@@ -104,6 +104,7 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
+
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
@@ -160,6 +161,7 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
+
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
@@ -178,7 +180,7 @@ if (plugPagTransactionResult.result == PlugPag.RET_OK) {
     // Falha na criação da transação pré-autorizada.
 } 
    //sampleEnd
-}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoKeyingData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-keying-data/index.html">PlugPagPreAutoKeyingData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada digitada.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores resultantes da solicitação da criação de transação pré-autorizada digitada.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Keying</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valores necessários para solicitação de criação da transação pré-autorizada digitada.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
+}</code></pre></div><hr><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="do-pre-auto-create.html"><span class="token function">doPreAutoCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">plugPagPreAutoKeyingData<span class="token operator">: </span><a href="../-plug-pag-pre-auto-keying-data/index.html">PlugPagPreAutoKeyingData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-plug-pag-transaction-result/index.html">PlugPagTransactionResult</a></div><p class="paragraph">Executa uma solicitação de criação de transação pré-autorizada digitada.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Valores resultantes da solicitação da criação de transação pré-autorizada digitada.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":WrapperPPS:dokkaHtml/main" data-filterable-set=":WrapperPPS:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>plug</span><wbr></wbr><span>Pag</span><wbr></wbr><span>Pre</span><wbr></wbr><span>Auto</span><wbr></wbr><span>Keying</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Valores necessários para solicitação de criação da transação pré-autorizada digitada.</p></div></div></div></div></div><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.content.Context
 import br.com.uol.pagseguro.plugpagservice.wrapper.IPlugPagWrapper
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPag
 import br.com.uol.pagseguro.plugpagservice.wrapper.PlugPagActivationData
@@ -216,6 +218,7 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
+
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
@@ -272,6 +275,7 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
+
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
