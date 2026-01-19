@@ -104,7 +104,6 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
-
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
@@ -119,10 +118,7 @@ val listener = object : PlugPagNFCListener {
 }
 val data = PlugPagNearFieldCardData()
 
-plugPag.asyncReadNFC(
-    cardData = data,
-    listener = listener
-) 
+plugPag.asyncReadNFC(cardData = data, listener = listener) 
    //sampleEnd
 }</code></pre></div></div></div>
 </div>
