@@ -104,7 +104,6 @@ import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPaymentListe
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagPrintActionListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.listeners.PlugPagSetStylesListener
 import br.com.uol.pagseguro.plugpagservice.wrapper.value
-
 fun main() { 
    //sampleStart 
    val plugPag: IPlugPagWrapper = PlugPag(context)
@@ -123,10 +122,7 @@ val listener = object : PlugPagActivationListener {
 }
 val data = PlugPagActivationData(activationCode = &quot;Seu Código de Ativação&quot;)
 
-plugPag.asyncDeactivate(
-    activationData = data,
-    listener = listener
-) 
+plugPag.asyncDeactivate(activationData = data, listener = listener) 
    //sampleEnd
 }</code></pre></div></div></div>
 </div>
